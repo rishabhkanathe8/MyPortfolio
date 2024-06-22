@@ -1,5 +1,14 @@
 
 
+.dp-resume-stepper__root .MuiStepIcon-text {
+   content: "";
+}
+
+.dp-resume-stepper__root .MuiStepIcon-root{
+    color: lightblue;
+    font-size: 1.5rem;
+}
+
 .dp-resume-stepper-root__label .MuiStepLabel-label {
     font-size: larger;
     font-family: 'Times New Roman', Times, serif;
@@ -13,51 +22,11 @@
 .dp-resume-stepper-node__label .MuiStepLabel-label {
     font-size: large ; 
     color:black;
-    
-    
 }
 .dp-resume-stepper__description .MuiCollapse-wrapperInner{
     font-size: large;
-   
-
+    color:black;
 }
 
 
 
-/* Specific targeting for Stepper component */
-/* .dp-resume-stepper__root.MuiStepper-root {
-    font-size: medium;
-    font-family: 'Times New Roman', Times, serif;
-    color: yellow;
-} */
-
-/* Specific targeting for StepLabel components */
-/* .dp-resume-stepper-root__label.MuiStepLabel-label,
-.dp-resume-stepper-node__label.MuiStepLabel-label,
-.dp-resume-stepper__description.MuiStepLabel-label {
-    font-size: small;
-    color: green 
-} */
-
-/* Overriding general MuiStepLabel-label class */
-
-
-/* Ensure your class names target the specific elements correctly */
-/* .dp-resume-stepper-root__label.MuiStepLabel-label,
-.dp-resume-stepper-node__label.MuiStepLabel-label {
-    font-size: small ; 
-    color: green 
-} */
-
-/* If you want to make sure all StepLabel have the same style */
-/* .dp-resume-stepper__root .MuiStepLabel-label {
-    color: green ;
-    font-size: small ;
-} */
-
-/* Overriding styles for StepContent if needed */
-/* .dp-resume-stepper__description.MuiStepContent-root {
-    font-size: small;
-    color: green ;
-    font-family: 'Times New Roman', Times, serif; 
-} */

@@ -21,7 +21,7 @@ export const ResumeStepper = ({ steps }) => {
                     <StepContent className='dp-resume-stepper__description'>{desc.description}</StepContent>
                   </Step>
                 ))}
-              <Step></Step>
+              <Step></Step>   
               </Stepper>
               </>
             }
