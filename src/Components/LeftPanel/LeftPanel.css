@@ -1,0 +1,58 @@
+/* LeftPanel.css */
+
+.dp-left-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around; /* Space items evenly */
+    align-items: center;
+    height: 100%; /* Full height */
+     /* Prevent scrollbar */
+}
+
+.dp-left-panel__my-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.dp-left-panel__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center items */
+    padding: 10px;
+    color: #fff;
+    flex-grow: 1; /* Allow growth */
+    overflow: hidden; /* Prevent scrollbar */
+}
+
+.dp-left-panel__links div {
+    margin: 15px 0; /* Add more spacing between items */
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.dp-left-panel__links div:hover {
+    color: #00aaff;
+}
+
+@media (max-width: 768px) {
+    .dp-left-panel {
+        justify-content: center;
+        width: 100%;
+    }
+
+    .dp-left-panel__my-name {
+        font-size: 20px;
+    }
+
+    .dp-left-panel__links {
+        padding: 5px;
+    }
+}

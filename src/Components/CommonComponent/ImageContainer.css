@@ -1,0 +1,42 @@
+/* ImageContainer.css */
+
+.dp-image-container {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: 15px auto;
+    box-shadow: 0 0 20px 2px aqua;
+    border: 4px solid #000;
+    transition: transform 1.5s;
+    transform-style: preserve-3d;
+}
+
+.image1 {
+    background-image: url("https://media.licdn.com/dms/image/D4D03AQFYMTH1pNVYDg/profile-displayphoto-shrink_800_800/0/1713025586938?e=1723075200&v=beta&t=XJleENXoPNvvLaUAMRL-qnx7n61LoIEJjmBznWrWQho");
+}
+
+.image2 {
+    background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+}
+
+.flip {
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+
+@media (max-width: 768px) {
+    .dp-image-container {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media (max-width: 480px) {
+    .dp-image-container {
+        width: 100px;
+        height: 100px;
+    }
+}

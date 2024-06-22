@@ -1,0 +1,83 @@
+/* PortFolio.css */
+
+/* Main container */
+.dp-port-folio {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    background-image: url("https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?w=826&t=st=1717696512~exp=1717697112~hmac=a1c61c8f0936e50d190dba43032060ca591d930abca6256d79821efbcadd4e66");
+    top: 0;
+    left: 0;
+}
+
+.dp-port-folio__panel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+/* Left panel */
+.dp-port-folio__left-panel {
+    width: 20%;
+    background-color: #040b14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+    height: 100%; /* Full height */
+    justify-content: space-between; /* Space content evenly */
+    transition: all 0.3s ease-in-out;
+}
+
+.dp-port-folio__right-panel {
+    flex: 1;
+    overflow-y: auto;
+    display: block;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+/* For smaller screens (mobile view) */
+@media (max-width: 768px) {
+    .dp-port-folio {
+        flex-direction: column;
+    }
+
+    .dp-port-folio__panel {
+        flex-direction: column;
+    }
+
+    .dp-port-folio__left-panel {
+        width: 100%;
+        height: 100vh; /* Full viewport height */
+        justify-content: center; /* Center content */
+        text-align: center; /* Center text */
+    }
+
+    .dp-port-folio__right-panel {
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 10;
+        opacity: 0;
+        transform: translateY(100%);
+    }
+
+    .dp-port-folio__right-panel.visible {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    .dp-port-folio__left-panel.hidden {
+        display: none;
+    }
+}

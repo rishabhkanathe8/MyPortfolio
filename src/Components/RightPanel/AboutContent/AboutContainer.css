@@ -1,0 +1,57 @@
+.dp-about-container {
+    display: flex;
+    height: 100vh;
+    box-sizing: border-box; /* Ensure padding is included in the total height */
+    padding: 30px;
+    overflow: hidden; /* Prevent overflow from the main container */
+}
+
+.dp-about-container__inner {
+    display: flex;
+    flex: 1;
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+    border-radius: 4px;
+    background-color: #f5f5f545;
+    box-shadow: #00ceff24 1px 1px 3px 4px;
+}
+
+.dp-about-container__photo {
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://media.licdn.com/dms/image/D4D03AQFYMTH1pNVYDg/profile-displayphoto-shrink_800_800/0/1713025586938?e=1723075200&v=beta&t=XJleENXoPNvvLaUAMRL-qnx7n61LoIEJjmBznWrWQho");
+    min-height: 200px;
+    margin: 15px;
+    border-radius: 6px;
+}
+
+.dp-about-container__content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box; /* Ensure padding is included in the total width */
+    margin: 15px;
+    color: black;
+    border-radius: 6px;
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    font-size: x-large;
+    max-height: calc(100vh - 60px - 30px - 30px); /* Subtract total padding */
+}
+
+@media (max-width: 768px) {
+    .dp-about-container {
+        height: 100vh; /* Allow the height to adjust for mobile view */
+    }
+    .dp-about-container__inner {
+        flex-direction: column;
+    }
+    .dp-about-container__photo {
+        min-height: 150px; /* Adjust min-height for mobile */
+        margin: 10px;
+    }
+    .dp-about-container__content {
+        max-height: calc(100vh - 180px); /* Adjust for photo height and margins */
+        margin: 10px;
+    }
+}
