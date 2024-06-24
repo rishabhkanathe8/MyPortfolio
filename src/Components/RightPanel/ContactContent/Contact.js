@@ -40,7 +40,7 @@ export const Contact = () => {
       setSubject('');
       setMessage('');
     })
-    .catch((error) => {
+    .catch((error) => { 
       console.error('Error sending email:', error);
       alert('Failed to send email. Please try again later.');
     });
