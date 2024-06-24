@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import './HomeContainer.css'
 
 const HomeContainer = () => {
-    const positions = ["Full Stack Developer", "Coder", "Full-Time Code Maverick", "Tech Wizard"];
     const [post, setPost] = useState("");
     const [index, setIndex] = useState(0);
     const [charIndex, setCharIndex] = useState(0);
     const [adding, setAdding] = useState(true);
+
+    const positions = useMemo(() => ["Full Stack Developer", "Coder", "Full-Time Code Maverick", "Tech Wizard"], []);
 
     useEffect(() => {
         const interval = setInterval(() => {
@@ -39,10 +40,10 @@ const HomeContainer = () => {
 
     return (
         <div className="dp-home">
-        <div className="dp-home-container">
-            <div className="dp-home-container__my-name">Rishabh Kanathe</div>
-            <div className="dp-home-container__my-post">I am {post}</div>
-        </div>
+            <div className="dp-home-container">
+                <div className="dp-home-container__my-name">Rishabh Kanathe</div>
+                <div className="dp-home-container__my-post">I am {post}</div>
+            </div>
         </div>
     );
 };
