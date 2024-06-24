@@ -1,0 +1,41 @@
+/* Wrapper for centering */
+.dp-contact-form__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Form container styling */
+.dp-contact-form_submit {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background-color: rgba(245, 245, 245, 0.649);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Label color override */
+.css-14s5rfu-MuiFormLabel-root-MuiInputLabel-root {
+    color: black !important;
+}
+h4{
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Responsive design for mobile devices */
+@media (max-width: 768px) {
+    .dp-contact-form__wrapper {
+        padding: 10px;
+    }
+
+    .dp-contact-form_submit {
+        width: 100%;
+        max-width: none; /* Remove the max-width on mobile */
+    }
+}

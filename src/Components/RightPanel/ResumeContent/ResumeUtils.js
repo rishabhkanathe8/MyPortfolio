@@ -5,7 +5,7 @@ export const professionalSummery = [
       description: [
         {
             label:"Career Objective",
-            description:"Certified Software Professional with experience in core and advanced Java, C#, Ms.Net, React, MySQL, Oracle, and Spring Boot. Proven communicator, committed to surpassing project goals and client expectations. Successfully orchestrated projects like Parking Management System, Tour Easy and Health Junction, leveraging Spring Boot, microservices, and Java frameworks. Enhanced efficiency and elevated customer experiences. Ready to deliver impactful solutions for your organization's success",
+            description:"Certified Software Professional and Working as Full Stack Developer with experience in core and advanced Java, C#, Ms.Net, React, MySQL, Oracle, and Spring Boot. Proven communicator, committed to surpassing project goals and client expectations. Successfully orchestrated projects like Parking Management System, Tour Easy and Health Junction, leveraging Spring Boot, microservices, and Java frameworks. Enhanced efficiency and elevated customer experiences. Ready to deliver impactful solutions for your organization's success",
         }
       ]
     },

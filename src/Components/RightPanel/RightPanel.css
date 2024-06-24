@@ -21,6 +21,11 @@
     right: 10px;
 }
 
+.dp-right-panel__content{
+    width: 100%;
+    height: 100%;
+}
+
 
 @media (max-width: 768px) {
     .dp-right-panel {

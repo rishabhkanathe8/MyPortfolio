@@ -5,7 +5,7 @@ import { professionalExperience } from './ResumeUtils';
 import { projects } from './ResumeUtils';
 import { education } from './ResumeUtils';
 import { certificate } from './ResumeUtils';
-import './Resume.css'
+import './Resume.css';
 
 export const Resume = () => {
   return (
