@@ -39,6 +39,8 @@
     overflow-y: auto;
     display: block;
     transition: transform 0.3s, opacity 0.3s;
+    margin: 20px;
+    height: 100%;
 }
 
 /* For smaller screens (mobile view) */
@@ -69,6 +71,7 @@
         z-index: 10;
         opacity: 0;
         transform: translateY(100%);
+        margin: 0;
     }
 
     .dp-port-folio__right-panel.visible {

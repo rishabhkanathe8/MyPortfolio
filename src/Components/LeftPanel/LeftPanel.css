@@ -6,6 +6,7 @@
     justify-content: space-around; /* Space items evenly */
     align-items: center;
     height: 100%; /* Full height */
+    font-family: 'Bebas Neue', cursive;
      /* Prevent scrollbar */
 }
 
@@ -28,17 +29,22 @@
     justify-content: center; /* Center items */
     padding: 10px;
     color: #fff;
-    flex-grow: 1; /* Allow growth */
     overflow: hidden; /* Prevent scrollbar */
+    gap: 20px;
 }
-
-.dp-left-panel__links div {
-    margin: 15px 0; /* Add more spacing between items */
+.icon-button-text {
+    margin-left: 8px; /* Adjust the spacing between the icon and text */
+    font-size: 1rem; /* Adjust font size if needed */
+    display: inline-flex; /* Ensure text and icon are aligned */
+    align-items: center;
+}
+.dp-left-panel__links  {
+    margin: 15px 0;
     cursor: pointer;
     transition: color 0.3s;
 }
 
-.dp-left-panel__links div:hover {
+.dp-left-panel__links :hover {
     color: #00aaff;
 }
 
@@ -46,13 +52,12 @@
     .dp-left-panel {
         justify-content: center;
         width: 100%;
-    }
-
-    .dp-left-panel__my-name {
-        font-size: 20px;
+        gap: 20px;
     }
 
     .dp-left-panel__links {
         padding: 5px;
+        width: 100%;
+        gap: 20px;
     }
 }

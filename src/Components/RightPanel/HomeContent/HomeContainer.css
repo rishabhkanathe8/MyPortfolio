@@ -2,7 +2,60 @@
 .dp-home-container{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: 10px;
-    align-items: flex-start;
+    height: 100vh;
+    justify-content: center;
+}
+
+
+.dp-home-container__my-name{
+     font-family: 'Bebas Neue', cursive;
+     font-size: 60px;
+     font-weight: 900;
+     font-style: oblique;
+}
+
+.dp-home-container__my-post {
+    font-family: 'Bebas Neue', cursive;
+    font-weight: 400;
+    font-size: 26px;
+    font-style: italic;
+    position: relative;
+    display: inline-block;
+}
+
+.dp-home-container__my-post::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    background-color: black;
+    width: 100%;
+    transition: width 0.15s ease;
+    transform-origin: left;
+    transform: scaleX(0);
+}
+
+.dp-home-container__my-post span {
+    position: relative;
+    display: inline-block;
+}
+
+.dp-home-container__my-post span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 4px;
+    background-color: #149d;
+    width: 100%;
+    transform: scaleX(1);
+    transition: transform 0.15s ease;
+}
+
+@media (max-width: 768px) {
+    .dp-home-container__my-name{
+        font-size: 36px;
+    }
+
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState, useMemo } from "react";
-import './HomeContainer.css'
+import './HomeContainer.css';
 
 const HomeContainer = () => {
     const [post, setPost] = useState("");
@@ -13,7 +13,6 @@ const HomeContainer = () => {
         const interval = setInterval(() => {
             setPost((prevPost) => {
                 if (adding) {
-                    // Add characters one by one
                     if (charIndex < positions[index].length) {
                         setCharIndex(charIndex + 1);
                         return positions[index].slice(0, charIndex + 1);
@@ -22,7 +21,6 @@ const HomeContainer = () => {
                         return prevPost;
                     }
                 } else {
-                    // Remove characters one by one
                     if (charIndex > 0) {
                         setCharIndex(charIndex - 1);
                         return positions[index].slice(0, charIndex - 1);
@@ -33,16 +31,18 @@ const HomeContainer = () => {
                     }
                 }
             });
-        }, 100);
+        }, 150);
 
-        return () => clearInterval(interval); // Cleanup interval on component unmount
+        return () => clearInterval(interval);
     }, [adding, charIndex, index, positions]);
 
     return (
         <div className="dp-home">
             <div className="dp-home-container">
                 <div className="dp-home-container__my-name">Rishabh Kanathe</div>
-                <div className="dp-home-container__my-post">I am {post}</div>
+                <div className="dp-home-container__my-post">
+                    I am <span>{post}</span>
+                </div>
             </div>
         </div>
     );

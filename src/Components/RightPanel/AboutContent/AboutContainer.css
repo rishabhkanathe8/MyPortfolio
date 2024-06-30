@@ -2,6 +2,7 @@
     height: 100vh;
     box-sizing: border-box; /* Ensure padding is included in the total height */
     overflow: hidden; /* Prevent overflow from the main container */
+    font-family: "Roboto", sans-serif;
 }
 
 .dp-about-container__inner {

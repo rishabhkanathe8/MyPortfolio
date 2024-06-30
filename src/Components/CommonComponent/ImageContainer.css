@@ -19,11 +19,11 @@
 }
 
 .image2 {
-    background-image: url("https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg");
+    background-image: url("https://avatars.githubusercontent.com/u/126444629?s=400&u=a6e4a74dc0df27f934572a36ec0abb5620d5a6bb&v=4");
 }
 
 .flip {
-    transform: rotateY(180deg);
+    transform: rotateY(95deg);
     backface-visibility: hidden;
 }
 
