@@ -67,6 +67,7 @@ overflow: auto;
     .dp-about-container__inner {
         flex-direction: column;
         height: 100%;
+        margin: 1px;
     }
     .dp-about-container__left {
         margin: 10px;
