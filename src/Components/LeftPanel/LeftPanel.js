@@ -13,7 +13,7 @@ import { IconButton } from '@mui/material';
 const LeftPanel = ({ onItemClick }) => {
     // const menuItems = [ 'Home', 'About', 'Resume', 'Contact'];
     const handleResumeDownload = () => {
-        const resumeUrl = 'https://github.com/rishabhkanathe8/MyPortfolio/raw/main/RISHABH_KANATHE_RESUME%20(3).pdf'; // Raw URL to your resume file
+        const resumeUrl = 'https://github.com/rishabhkanathe8/MyPortfolio/raw/main/RISHABH_KANATHE_RESUME.pdf'; // Raw URL to your resume file
         const link = document.createElement('a');
         link.href = resumeUrl;
         link.setAttribute('download', 'Rishabh_Kanathe_Resume.pdf'); // Adjust filename as needed
@@ -21,7 +21,6 @@ const LeftPanel = ({ onItemClick }) => {
         link.click();
         document.body.removeChild(link);
     };
-    
     
     return (
         <div className="dp-left-panel">
